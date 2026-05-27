@@ -100,11 +100,13 @@ export default function Landing({ onNext, isPlaying, onTogglePlay }) {
           <MusicPlayer isPlaying={isPlaying} onToggle={onTogglePlay} title="เพลงรัก" />
         </div>
 
-        <h1 className="font-pacifico text-5xl text-rose-500 drop-shadow-sm sm:text-6xl">
-          Happy Valentine's
-        </h1>
-        <h1 className="font-pacifico text-5xl text-rose-500 drop-shadow-sm sm:text-6xl">
-          Day
+        <h1 className="font-pacifico text-4xl sm:text-5xl md:text-6xl text-rose-500 drop-shadow-[0_2px_4px_rgba(244,114,182,0.3)] leading-snug select-none px-4 flex flex-col items-center gap-1 sm:gap-2">
+          <span className="block">May your day be</span>
+          <span className="block">as bright as your</span>
+          <span className="relative inline-block text-pink-600 font-semibold animate-pulse mt-1 drop-shadow-[0_2px_8px_rgba(219,39,119,0.4)]">
+            smile.
+            <span className="absolute -bottom-1.5 left-1/2 w-14 h-1 -translate-x-1/2 rounded-full bg-pink-400/30 blur-[2px]" />
+          </span>
         </h1>
 
         <div className="my-8 flex flex-col items-center">

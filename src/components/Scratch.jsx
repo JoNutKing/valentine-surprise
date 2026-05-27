@@ -167,11 +167,11 @@ export default function Scratch({ onComplete }) {
           style={{ width: size.w, height: size.h }}
         >
           {/* ชั้นใต้: รูปที่จะเผยออกมาเมื่อขูด */}
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 overflow-hidden">
             <img
               src={scratchPhoto}
               alt="surprise"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover scale-120 origin-center"
             />
             {/* gradient overlay เบาๆ ให้กลมกลืนกับโทนเพจ */}
             <div className="absolute inset-0 bg-gradient-to-t from-rose-500/20 via-transparent to-rose-200/20" />

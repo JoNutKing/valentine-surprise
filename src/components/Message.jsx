@@ -4,19 +4,19 @@ import couplePhoto from "../assets/baby/2.jpg";
 // กระดาษโน๊ต 3 หน้า — แก้ข้อความได้ตรงนี้เลย
 const NOTES = [
   {
-    text: ["ขอบคุณที่อยู่ข้างกันนะ", "รักเธอที่สุดเลยยย 💗"],
-    sign: "- จาก เค้าเอง -",
+    text: ["ขอบคุณที่เลือกอยู่ข้างกันนะ", "เค้าดีใจมากๆๆๆ 💗"],
+    sign: "- บี๋เอง -",
     rotate: "-2deg",
     tapeColor: "bg-rose-300/60",
   },
   {
-    text: ["ทุกวันที่มีเธอ", "คือวันที่ดีที่สุด ✨"],
-    sign: "- เค้าเอง -",
+    text: ["ทุกวันที่มีบี๋อยู่คือวัน", "ที่ดีที่สุดของเค้า✨"],
+    sign: "- บี๋เอง -",
     rotate: "1.5deg",
     tapeColor: "bg-pink-300/60",
   },
   {
-    text: ["อยู่กับเค้านานๆ นะ", "Happy Valentine's Day 💝"],
+    text: ["เป็นแฟนกันนะคับ ", "ห้ามปฎิเสธ5555 💝"],
     sign: "I Love You 💞",
     rotate: "-1deg",
     tapeColor: "bg-rose-400/60",
@@ -56,8 +56,12 @@ export default function Message({ onReplay }) {
       }`}
     >
       {/* รูปคู่ */}
-      <div className="mb-6 h-28 w-28 overflow-hidden rounded-full border-4 border-white shadow-xl">
-        <img src={couplePhoto} alt="us" className="h-full w-full object-cover" />
+      <div className="mb-6 h-28 w-28 overflow-hidden rounded-full border-4 border-white shadow-xl transform-gpu">
+        <img
+          src={couplePhoto}
+          alt="us"
+          className="h-full w-full object-cover transform-gpu backface-hidden [image-rendering:auto]"
+        />
       </div>
 
       {/* กระดาษโน๊ต — เปลี่ยนเมื่อ noteIndex เปลี่ยน */}
