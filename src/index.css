@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Pacifico&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Prompt", system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
