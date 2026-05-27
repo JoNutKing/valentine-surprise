@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/valentine-surprise/',
   server: {
     port: Number(process.env.PORT) || 5180,
     strictPort: false,
